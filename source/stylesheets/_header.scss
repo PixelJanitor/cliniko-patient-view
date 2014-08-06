@@ -23,6 +23,6 @@ header {
 .logo {
   @include hide-text();
   @include size(122px 30px);
-  background: url("/images/cliniko_logo.svg");
+  background: url("../images/cliniko_logo.svg");
   margin: 0;
 }

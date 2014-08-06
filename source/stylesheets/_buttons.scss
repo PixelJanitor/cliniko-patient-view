@@ -23,7 +23,7 @@ button {
     padding: 0 10px 0 16px;
 
     &:before {
-      content: url('/images/button_add_icon.svg');
+      content: url('../images/button_add_icon.svg');
       @include position(relative, 1px 6px null null);
     }
   }
