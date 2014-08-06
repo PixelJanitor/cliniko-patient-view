@@ -102,7 +102,7 @@ button {
     padding: 0 10px 0 16px; }
     /* line 25, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_buttons.scss */
     button.has-add-icon:before {
-      content: url("/images/button_add_icon.svg");
+      content: url("../images/button_add_icon.svg");
       position: relative;
       top: 1px;
       right: 6px; }
@@ -132,7 +132,7 @@ header {
   overflow: hidden;
   height: 30px;
   width: 122px;
-  background: url("/images/cliniko_logo.svg");
+  background: url("../images/cliniko_logo.svg");
   margin: 0; }
   /* line 4, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/addons/_hide-text.scss */
   .logo:before {
@@ -168,7 +168,7 @@ header {
   outline: none;
   box-shadow: 0 1px 0 rgba(232, 238, 240, 0.6);
   color: #3a3a3a;
-  background: url("/images/search_icon.svg") left center no-repeat; }
+  background: url("../images/search_icon.svg") left center no-repeat; }
   /* line 4, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/css3/_placeholder.scss */
   #patient-search-input::-webkit-input-placeholder {
     color: rgba(58, 58, 58, 0.4); }
@@ -281,13 +281,13 @@ header {
 
 /* line 74, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
 .patient-phone-number {
-  background: url("/images/phone_icon.svg") 12px center no-repeat;
+  background: url("../images/phone_icon.svg") 12px center no-repeat;
   color: #6e7073;
   padding: 0 0 0 34px; }
 
 /* line 80, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
 .patient-birthday {
-  background: url("/images/birthday_icon.svg") 10px center no-repeat;
+  background: url("../images/birthday_icon.svg") 10px center no-repeat;
   color: #6e7073;
   padding: 0 0 0 34px; }
 
