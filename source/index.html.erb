@@ -9,9 +9,59 @@ title: Cliniko - Patients
 </div>
 <header>
   <div class="wrapper">
-    <h1 class="logo">Cliniko</h1>
+    <a href="#">
+      <h1 class="logo">Cliniko</h1>
+    </a>
   </div>
 </header>
-<main></main>
-<aside></aside>
-<!-- <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %> -->
+<div class="content">
+  <main>
+    <div class="wrapper">
+      <!-- search bar -->
+      <section class="patient-search">
+        <button class="has-add-icon">Add Patient</button>
+        <span class="search-separation-text">or</span>
+        <input type="search" id="patient-search-input" placeholder="Search by Name, phone number, reference number, email, or DOB">
+      </section>
+
+      <section class="search-results">
+        <ul class="patient-search-results">
+          <!-- for the sake of time -->
+          <%- 3.times do%>
+            <li>
+              <a href="#" class="patient-search-result">
+                <div class="patient-name">Jesse Bennett-Chamberlain</div>
+                <div class="patient-phone-number">011 61 2 1234 5678</div>
+                <div class="patient-birthday">December 31, 1980</div>
+                <div class="patient-next-appointment">Next Appt. on <strong>November 30 2014</strong></div>
+              </a>
+            </li>
+          <% end %>
+          <%- 4.times do%>
+            <li>
+              <a href="#" class="patient-search-result">
+                <div class="patient-name">Jesse Bennett-Chamberlain</div>
+                <div class="patient-phone-number">011 61 2 1234 5678</div>
+                <div class="patient-birthday">December 31, 1980</div>
+                <div class="patient-next-appointment">No Scheduled Appt.</div>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <aside>
+    <div class="recent-patient-total"><a href="#">18</a> of 87 patients have had appointments in the last 6 months.</div>
+    <ul class="recent-patients">
+      <%- 18.times do%>
+        <a href="#">
+          <li class="recent-patient"> Drew Warkentin -
+            <span class="phone-number">011 61 2 1234 5678</span>
+            <div class="next-appointment">Next Appt on <strong>September 26, 2014</strong></div>
+          </li>
+        </a>
+      <% end %>
+    </ul>
+  </aside>
+</div>
