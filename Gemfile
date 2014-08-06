@@ -7,6 +7,9 @@ gem "middleman", "~>3.3.3"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
+# github pages deploy
+gem 'middleman-gh-pages'
+
 # bourbon mixin library
 gem 'bourbon-compass', '~>4.0.2'
 
