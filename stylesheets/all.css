@@ -1,0 +1,344 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+/* line 3, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_typography.scss */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #3a3a3a; }
+
+/* line 9, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_typography.scss */
+a {
+  color: #f472b0; }
+
+/* line 1, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+html, body {
+  min-height: 100%;
+  height: 100%; }
+
+/* line 6, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 10, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+.wrapper {
+  width: calc(100% - 40px);
+  margin: auto; }
+  /* line 15, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/addons/_clearfix.scss */
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 16, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+.content {
+  min-height: 100%; }
+  /* line 15, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/addons/_clearfix.scss */
+  .content:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 21, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+main {
+  float: left;
+  width: calc(100% - 320px);
+  padding-top: 20px; }
+  @media screen and (max-width: 768px) {
+    /* line 21, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+    main {
+      float: none;
+      width: 100%; } }
+
+/* line 33, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+aside {
+  float: right;
+  width: 320px;
+  height: 100%;
+  background: #f5f7f8;
+  box-shadow: -1px 0 0 #e8eef0;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    /* line 33, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_layout.scss */
+    aside {
+      float: none;
+      width: 100%; } }
+
+/* line 1, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_globals.scss */
+body {
+  -webkit-animation: fade-in 2s;
+  -moz-animation: fade-in 2s;
+  animation: fade-in 2s; }
+
+@-webkit-keyframes fade-in {
+  /* line 8, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_globals.scss */
+  from {
+    opacity: 0; } }
+@-moz-keyframes fade-in {
+  /* line 8, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_globals.scss */
+  from {
+    opacity: 0; } }
+@keyframes fade-in {
+  /* line 8, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_globals.scss */
+  from {
+    opacity: 0; } }
+/* line 19, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_buttons.scss */
+button {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  line-height: 0;
+  border-radius: 4px;
+  border: 1px solid #505254;
+  border-bottom: 2px solid #505254;
+  background: #6e7073;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  -webkit-tap-highlight-color: #f0f0f0; }
+  /* line 22, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_buttons.scss */
+  button.has-add-icon {
+    padding: 0 10px 0 16px; }
+    /* line 25, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_buttons.scss */
+    button.has-add-icon:before {
+      content: url("/images/button_add_icon.svg");
+      position: relative;
+      top: 1px;
+      right: 6px; }
+
+/* line 1, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_header.scss */
+.trial-remaining-message {
+  width: 100%;
+  background: #494a4c;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+    padding-top: 8px;
+    padding-left: 0;
+    padding-right: 0; }
+
+/* line 13, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_header.scss */
+header {
+  width: 100%;
+  background: #2795d9;
+  padding: 24px;
+    padding-top: 18px;
+    padding-left: 0;
+    padding-right: 0; }
+
+/* line 23, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_header.scss */
+.logo {
+  overflow: hidden;
+  height: 30px;
+  width: 122px;
+  background: url("/images/cliniko_logo.svg");
+  margin: 0; }
+  /* line 4, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/addons/_hide-text.scss */
+  .logo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%; }
+
+/* line 4, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.search-separation-text {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  padding: 0 20px 0; }
+
+/* line 10, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.patient-search {
+  margin: 0 0 20px; }
+
+/* line 14, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+#patient-search-input {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  box-sizing: border-box;
+  width: calc(100% - 172px);
+  height: 40px;
+  padding: 0 0 0 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(232, 238, 240, 0.6);
+  color: #3a3a3a;
+  background: url("/images/search_icon.svg") left center no-repeat; }
+  /* line 4, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/css3/_placeholder.scss */
+  #patient-search-input::-webkit-input-placeholder {
+    color: rgba(58, 58, 58, 0.4); }
+  /* line 4, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/css3/_placeholder.scss */
+  #patient-search-input::-moz-placeholder {
+    color: rgba(58, 58, 58, 0.4); }
+  /* line 4, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/css3/_placeholder.scss */
+  #patient-search-input:-moz-placeholder {
+    color: rgba(58, 58, 58, 0.4); }
+  /* line 4, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/css3/_placeholder.scss */
+  #patient-search-input:-ms-input-placeholder {
+    color: rgba(58, 58, 58, 0.4); }
+  /* line 31, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+  #patient-search-input:focus {
+    box-shadow: 0 1px 0 rgba(58, 58, 58, 0.5); }
+
+/* line 36, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.patient-search-results {
+  padding: 0;
+  list-style-type: none;
+  margin: 0; }
+  /* line 15, /Users/dcb/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bourbon-compass-4.0.2/stylesheets/bourbon/addons/_clearfix.scss */
+  .patient-search-results:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 42, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+  .patient-search-results li {
+    float: left;
+    width: 30.333%;
+    margin: 0 4.5% 30px 0; }
+    /* line 8, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+    .patient-search-results li:nth-of-type(3n+3) {
+      margin: 0 0 30px 0; }
+    @media screen and (max-width: 1150px) {
+      /* line 42, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+      .patient-search-results li {
+        width: 47.5%; }
+        /* line 17, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(3n+3) {
+          margin: 0 4.5% 30px 0; }
+        /* line 21, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(2n+2) {
+          margin: 0 0 30px 0; } }
+    @media screen and (max-width: 880px) {
+      /* line 42, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+      .patient-search-results li {
+        width: 100%; }
+        /* line 31, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(3n+3) {
+          margin: 0 0 30px 0; }
+        /* line 35, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(2n+2) {
+          margin: 0 0 30px 0; } }
+    @media screen and (max-width: 768px) {
+      /* line 42, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+      .patient-search-results li {
+        width: 47.5%; }
+        /* line 45, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(3n+3) {
+          margin: 0 4.5% 30px 0; }
+        /* line 49, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(2n+2) {
+          margin: 0 0 30px 0; } }
+    @media screen and (max-width: 550px) {
+      /* line 42, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+      .patient-search-results li {
+        width: 100%; }
+        /* line 59, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(3n+3) {
+          margin: 0 0 30px 0; }
+        /* line 63, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_grid.scss */
+        .patient-search-results li:nth-of-type(2n+2) {
+          margin: 0 0 30px 0; } }
+
+/* line 47, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.patient-search-result {
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+  display: block;
+  box-shadow: 0 0 0 1px #e8eef0;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #6e7073;
+  padding: 10px 0 0; }
+  /* line 57, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+  .patient-search-result:hover {
+    box-shadow: 0 0 0 1px #cfd8dc; }
+    /* line 60, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+    .patient-search-result:hover > .patient-name {
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+      transform: translateY(-4px); }
+
+/* line 66, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.patient-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 0 10px; }
+
+/* line 74, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.patient-phone-number {
+  background: url("/images/phone_icon.svg") 12px center no-repeat;
+  color: #6e7073;
+  padding: 0 0 0 34px; }
+
+/* line 80, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.patient-birthday {
+  background: url("/images/birthday_icon.svg") 10px center no-repeat;
+  color: #6e7073;
+  padding: 0 0 0 34px; }
+
+/* line 86, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.patient-next-appointment {
+  background: #f5f7f8;
+  text-align: center;
+  font-size: 12px;
+  color: #6e7073;
+  margin: 10px 0 0;
+  padding: 3px 0 4px; }
+
+/* line 97, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.recent-patient-total {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  color: #6e7073; }
+
+/* line 103, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.recent-patients {
+  padding: 0; }
+  /* line 106, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+  .recent-patients a {
+    color: #3a3a3a;
+    text-decoration: none; }
+
+/* line 112, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+.recent-patient {
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  box-shadow: 0 1px 0 #cfd8dc;
+  opacity: .75;
+  padding: 0 0 10px;
+  margin: 0 0 10px; }
+  /* line 121, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+  .recent-patient:hover {
+    opacity: 1;
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+    transform: translateX(4px); }
+  /* line 126, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+  .recent-patient .phone-number {
+    font-weight: 400; }
+  /* line 130, /Users/dcb/Projects/cliniko-patients/source/stylesheets/_patients.scss */
+  .recent-patient .next-appointment {
+    font-weight: 400;
+    font-size: 12px; }
