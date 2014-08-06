@@ -1,0 +1,11 @@
+body {
+  @include animation(fade-in 2s);
+}
+
+// fading boddy in on load
+
+@include keyframes(fade-in) {
+  from {
+    opacity: 0;
+  }
+}

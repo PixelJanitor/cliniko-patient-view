@@ -1,0 +1,134 @@
+
+// search result section
+
+.search-separation-text {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  padding: 0 20px 0;
+}
+
+.patient-search {
+  margin: 0 0 20px;
+}
+
+#patient-search-input {
+  @include transition(all .3s);
+  @include ellipsis;
+  text-align: center;
+  box-sizing: border-box;
+  width: calc(100% - 172px); // compensating for width of add button and separation text
+  height: 40px;
+  padding: 0 0 0 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 0 rgba($blue-outline, .6);
+  color: $black;
+  background: url('/images/search_icon.svg') left center no-repeat;
+  @include placeholder {
+    color: rgba($black, .4);
+  }
+
+  &:focus {
+    box-shadow: 0 1px 0 rgba($black, .5);
+  }
+}
+
+.patient-search-results {
+  @include clearfix();
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+
+  li {
+    @include grid-item();
+  }
+}
+
+.patient-search-result {
+  @include transition(all .15s);
+  display: block;
+  box-shadow: 0 0 0 1px $blue-outline;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: $button-grey;
+  padding: 10px 0 0;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $blue-separator;
+
+    & > .patient-name {
+      @include transform(translateY(-4px))
+    }
+  }
+}
+
+.patient-name {
+  @include ellipsis;
+  @include transition(all .15s);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 0 10px;
+}
+
+.patient-phone-number {
+  background: url('/images/phone_icon.svg') 12px center no-repeat;
+  color: $button-grey;
+  padding: 0 0 0 34px;
+}
+
+.patient-birthday {
+  background: url('/images/birthday_icon.svg') 10px center no-repeat;
+  color: $button-grey;
+  padding: 0 0 0 34px;
+}
+
+.patient-next-appointment {
+  background: $blue-light-background;
+  text-align: center;
+  font-size: 12px;
+  color: $button-grey;
+  margin: 10px 0 0;
+  padding: 3px 0 4px;
+}
+
+// sidebar content
+
+.recent-patient-total {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  color: $button-grey
+}
+
+.recent-patients {
+  padding: 0;
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.recent-patient {
+  @include transition(all .15s);
+  @include ellipsis();
+  font-weight: 700;
+  box-shadow: 0 1px 0 $blue-separator;
+  opacity: .75;
+  padding: 0 0 10px;
+  margin: 0 0 10px;
+
+  &:hover {
+    opacity: 1;
+    @include transform(translateX(4px))
+  }
+
+  .phone-number {
+    font-weight: 400;
+  }
+
+  .next-appointment {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
